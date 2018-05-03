@@ -33,12 +33,12 @@ def bool():
 	stores = [{
     'name': 'Elton\'s first store',
     'items': [{'name':'my item 1', 'price': 30 }],
-    'dda': true,
+    'dda': True,
     },
     {
     'name': 'Elton\'s second store',
     'items': [{'name':'my item 2', 'price': 15 }],
-    'dda': true,
+    'dda': False,
     },
 ]
 	return jsonify(stores)			
