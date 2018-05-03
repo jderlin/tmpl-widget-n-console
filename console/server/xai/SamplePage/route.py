@@ -188,14 +188,44 @@ def places():
 			
 @app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
 def place():
-	place = {
+	placeLocation = {
 		'id': '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48',
-		'title': '鳥類',
-		'description': 'ddd',
-		'location': '日式',
-		'icon-url': True,
-		'path': True,
-		'images': [],
-		'fields':[]
+		'title': '隱者咖打車',
+		'description': '馬丁‧路德說過一句話：“人生最長久的且迫切的問題是：你在為別人做什麼？”<br/>一個小動作對你來說可能沒什麼，可是做了其實會有很大的不同！因為有了社會的關懷，有了人們的鼓勵，角落裡正在微微發光，希望發揮聚沙成塔的力量，大家一起幫助城市隱者，一起看見角落裡的微光！流落街頭是什麼滋味？你可曾想過或許哪天也被迫流浪？「小書The Small Issue」收錄了街友的生存策略，教一般人如何在街頭求生？另外也報導時下最夯的剩食議題，看街友如何在剩食餐廳把剩食變美食，以及關於街友服務機構的採訪，誰是街友的褓姆？而這些原本總是被服務、被給予的隱者們也為了小書的製作，深入食物銀行成為服務者…。這是一本與 #無家者 有關的小書，部份內容由曾經流浪街頭的街友共同參與完成。目前已經有三位隱者（兩位街友、一位獨居老人）願意擔任駐點販售員，販賣小書所得60%都歸予販售員！隱者將輪班去擺攤，歡迎大家前往購買小書，可以順便給隱者加油打氣，跟他們聊聊天喔! ➤週六文炳哥，週日小梅姐在 新手書店(三點～七點)➤週六小梅姐，週日文炳哥在 壩豆製坊(一點～五點)',
+		'location': { 
+			'lat':24.1477999,
+			'lng':120.6631362
+		},
+		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+		'path': Null,
+		'images': [
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
+		],
+		'fields':[
+			{ 
+				'title':'景點地名',
+				'content': '新手書店'
+			},
+			{ 
+				'title':'景點地址',
+				'content': '403台灣台中市西區向上北路129號'
+			},
+			{ 
+				'title':'行前必讀、適合對象',
+				'content': '/ 付款說明 /現金'
+			},
+			{ 
+				'title':'服務開始時間',
+				'content': '15:00'
+			},
+			{
+				'title':'服務時長',
+				'content': '240 分鐘'
+			}
+		]
 	}
 	return jsonify(place)	
