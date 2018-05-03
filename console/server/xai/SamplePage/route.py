@@ -41,3 +41,34 @@ def reverse_echo():
 			'status': 'Error',
 			'message': 'The argument s is required.'
 		})
+
+@app.route("/"+app.config['API_VERSION']+"/filters", methods=['GET'])
+def filters():
+	return jsonify([
+		{
+		'id': '9beb08c9-5069-4cfb-8ff9-ce8f5fbf4c07',
+		'name': '餐廳',
+		'icon': '日式',
+		'defaultActivate': false,
+		'childrens':[
+				{
+					'id': 'a3079e3b-10c6-4274-a3e1-b36406bc552e',
+					'name': '中式',
+					'icon': '日式',
+					'defaultActivate': false
+				},
+				{
+					'id': '34d6cf27-de11-4504-a980-32d9dcccdfc2',
+					'name': '美式',
+					'icon': '日式',
+					'defaultActivate': true
+				},
+				{
+					'id': 'a1365f37-bcb4-4183-adf3-26a83209b806',
+					'name': '日式',
+					'icon': '日式',
+					'defaultActivate': false
+				}
+			]
+		}
+	])
