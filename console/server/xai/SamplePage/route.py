@@ -22,14 +22,14 @@ def addSubscriber():
 	})
 
 @app.route("/"+app.config['API_VERSION']+"/test", methods=['GET'])
-def places():
+def test():
 	return jsonify({
 		'test': 'test',
 		'test': 'false'
 	})
 
 @app.route("/"+app.config['API_VERSION']+"/bool", methods=['GET'])
-def places():
+def bool():
 	return jsonify({
 		'test': 'test',
 		'test': false
