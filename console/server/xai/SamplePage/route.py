@@ -42,25 +42,25 @@ def filters():
 		{
 		'id': '9beb08c9-5069-4cfb-8ff9-ce8f5fbf4c07',
 		'name': '餐廳',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png',
 		'defaultActivate': False,
 		'childrens':[
 				{
 					'id': 'a3079e3b-10c6-4274-a3e1-b36406bc552e',
 					'name': '中式',
-					'icon': '日式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/area-chart.png',
 					'defaultActivate': False
 				},
 				{
 					'id': '34d6cf27-de11-4504-a980-32d9dcccdfc2',
 					'name': '美式',
-					'icon': '日式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/arrow-down.png',
 					'defaultActivate': False
 				},
 				{
 					'id': 'a1365f37-bcb4-4183-adf3-26a83209b806',
 					'name': '日式',
-					'icon': '日式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/asl-interpreting.png',
 					'defaultActivate': False
 				}
 			]
@@ -68,25 +68,25 @@ def filters():
 		{
 		'id': 'f07bdd19-c156-4ad7-a296-e7f1c967ba5a',
 		'name': '鳥類',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/battery-2.png',
 		'defaultActivate': False,
 		'childrens':[
 				{
 					'id': '358e74bf-a2a7-40d5-8e4b-6e8a30f1459f',
-					'name': '中式',
-					'icon': '日式',
+					'name': '大型',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg',
 					'defaultActivate': True
 				},
 				{
 					'id': '4dc5e881-48da-4fcc-8d76-e039d02e5f8f',
-					'name': '美式',
-					'icon': '日式',
+					'name': '中型',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_notice.svg',
 					'defaultActivate': True
 				},
 				{
 					'id': 'edfdccbd-d273-4124-aa27-4cd8409dd41d',
-					'name': '日式',
-					'icon': '日式',
+					'name': '小型',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_setting.svg',
 					'defaultActivate': False
 				}
 			]
@@ -94,25 +94,25 @@ def filters():
 		{
 		'id': '8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd',
 		'name': '類別一',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_notice.svg',
 		'defaultActivate': False,
 		'childrens':[
 				{
 					'id': 'eedb5172-2a14-48c0-983d-256422b0fe49',
-					'name': '中式',
-					'icon': '日式',
+					'name': 'A式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_booking.svg',
 					'defaultActivate': False
 				},
 				{
 					'id': '7d36e9ad-f2b1-475b-a4dc-f938b4c61ef6',
-					'name': '美式',
-					'icon': '日式',
+					'name': 'B式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/mytrip.png',
 					'defaultActivate': False
 				},
 				{
 					'id': '22f443ea-1ece-469a-9633-9ed2bff3b0ff',
-					'name': '日式',
-					'icon': '日式',
+					'name': 'C式',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/car.png',
 					'defaultActivate': False
 				}
 			]
@@ -120,25 +120,25 @@ def filters():
 		{
 		'id': 'ccb81ab5-6f50-4d2b-ad62-e3c54018364a',
 		'name': '類別二',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_booking.svg',
 		'defaultActivate': True
 		},
 		{
 		'id': 'a4d5b6c8-dc45-4763-8e54-8e0519444847',
 		'name': '類別三',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/mytrip.png',
 		'defaultActivate': False
 		},
 		{
 		'id': '404d398f-7520-4460-be22-629c30899d1c',
 		'name': '類別四',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/car.png',
 		'defaultActivate': False
 		},
 		{
 		'id': '28bc0fe3-aa1c-4474-8258-6f29c430562b',
 		'name': '類別五',
-		'icon': '日式',
+		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/arrow-down.png',
 		'defaultActivate': True
 		}
 	]
@@ -148,22 +148,38 @@ def filters():
 def places():
 	places = [		
 		{
-		'id': '36c4c67e-183c-4fb9-b95c-0f37a65953c5',
-		'title': '類別二',
-		'location': '日式',
-		'icon-url': True,
-		'path': True,
-		'images': [],
-		'fields':[]
+		'id': '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48',
+		'title': '隱者咖打車',
+		'location': { 
+			'lat':24.1477999,
+			'lng':120.6631362
+		},
+		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+		'path': None,
+		'images': [
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
+			]
 		},
 		{
-		'id': 'ce96991e-d65f-4b6b-9a38-2dfd6b52ef68',
-		'title': '類別二',
-		'location': '日式',
-		'icon-url': True,
-		'path': True,
-		'images': [],
-		'fields':[]
+		'id': '788b7823-8a60-42a1-b1b5-2987ff145d43',
+		'title': '車打咖者隱',
+		'location': { 
+			'lat':24.147810,
+			'lng':120.6631362
+		},
+		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+		'path': None,
+		'images': [
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
+			]
 		},
 		{
 		'id': '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48',
@@ -230,6 +246,9 @@ def place():
 		]
 	}
 	if id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48':
+		return jsonify(placeLocation)
+	else if id == '788b7823-8a60-42a1-b1b5-2987ff145d43':
+		placeLocation["id"] = '788b7823-8a60-42a1-b1b5-2987ff145d43'
 		return jsonify(placeLocation)
 	else:	
 		return jsonify({
