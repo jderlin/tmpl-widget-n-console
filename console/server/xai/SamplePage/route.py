@@ -30,11 +30,16 @@ def test():
 
 @app.route("/"+app.config['API_VERSION']+"/bool", methods=['GET'])
 def bool():
-	return jsonify({
-		'test': 'test',
-		'test': json.dumps(False),
-		'test': json.dumps(True)
-	})			
+	stores = [{
+    'name': 'Elton\'s first store',
+    'items': [{'name':'my item 1', 'price': 30 }],
+    },
+    {
+    'name': 'Elton\'s second store',
+    'items': [{'name':'my item 2', 'price': 15 }],
+    },
+]
+	return jsonify(stores)			
 
 @app.route("/"+app.config['API_VERSION']+"/reverse_echo", methods=['GET'])
 def reverse_echo():
