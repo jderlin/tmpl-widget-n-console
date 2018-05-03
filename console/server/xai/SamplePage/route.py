@@ -32,7 +32,8 @@ def test():
 def bool():
 	return jsonify({
 		'test': 'test',
-		'test': false
+		'test': json.dumps(False),
+		'test': json.dumps(True)
 	})			
 
 @app.route("/"+app.config['API_VERSION']+"/reverse_echo", methods=['GET'])
