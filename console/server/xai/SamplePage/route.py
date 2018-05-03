@@ -21,6 +21,12 @@ def addSubscriber():
 		'foo': 'bar'
 	})
 
+@app.route("/"+app.config['API_VERSION']+"/test", methods=['GET'])
+def places():
+	return jsonify({
+		'test': 'test'
+	})		
+
 @app.route("/"+app.config['API_VERSION']+"/reverse_echo", methods=['GET'])
 def reverse_echo():
 	s = request.args.get('s')
@@ -64,43 +70,5 @@ def filters():
 					'defaultActivate': false
 				}
 			]
-		},
-		{
-		'id': 'f07bdd19-c156-4ad7-a296-e7f1c967ba5a',
-		'name': '鳥類',
-		'icon': '日式',
-		'defaultActivate': false,
-		'childrens':[
-				{
-					'id': '358e74bf-a2a7-40d5-8e4b-6e8a30f1459f',
-					'name': '中式',
-					'icon': '日式',
-					'defaultActivate': false
-				},
-				{
-					'id': '4dc5e881-48da-4fcc-8d76-e039d02e5f8f',
-					'name': '美式',
-					'icon': '日式',
-					'defaultActivate': true
-				},
-				{
-					'id': 'edfdccbd-d273-4124-aa27-4cd8409dd41d',
-					'name': '日式',
-					'icon': '日式',
-					'defaultActivate': false
-				}
-			]
 		}
-	])	
-
-@app.route("/"+app.config['API_VERSION']+"/places", methods=['POST'])
-def places():
-	return jsonify({
-		'test': 'test'
-	})				
-			
-@app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
-def place():
-	return jsonify({
-		'test': 'test'
-	})	
+	])
