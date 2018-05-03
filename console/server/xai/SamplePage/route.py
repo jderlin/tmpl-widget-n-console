@@ -188,7 +188,7 @@ def places():
 			
 @app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
 def place():
-	null = None
+	id = request.args.get('id')
 	placeLocation = {
 		'id': '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48',
 		'title': '隱者咖打車',
@@ -198,7 +198,7 @@ def place():
 			'lng':120.6631362
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-		'path': null,
+		'path': '',
 		'images': [
 			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
 			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
@@ -229,4 +229,10 @@ def place():
 			}
 		]
 	}
-	return jsonify(place)	
+	if id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48'
+		return jsonify(placeLocation)
+	else	
+		return jsonify({
+			'other':'yes'
+			})
+		
