@@ -21,6 +21,12 @@ def addSubscriber():
 		'foo': 'bar'
 	})
 
+@app.route("/"+app.config['API_VERSION']+"/test", methods=['GET'])
+def test():
+	return jsonify({
+		'test': 'test'
+	})	
+
 @app.route("/"+app.config['API_VERSION']+"/reverse_echo", methods=['GET'])
 def reverse_echo():
 	s = request.args.get('s')
