@@ -241,13 +241,14 @@ def place():
 			},
 			{
 				'title':'服務時長',
+
 				'content': '240 分鐘'
 			}
 		]
 	}
 	if id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48':
 		return jsonify(placeLocation)
-	else if id == '788b7823-8a60-42a1-b1b5-2987ff145d43':
+	elif id == '788b7823-8a60-42a1-b1b5-2987ff145d43':
 		placeLocation["id"] = '788b7823-8a60-42a1-b1b5-2987ff145d43'
 		return jsonify(placeLocation)
 	else:	
