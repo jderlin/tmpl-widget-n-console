@@ -155,14 +155,7 @@ def places():
 			'lng':120.6631362
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-		'path': None,
-		'images': [
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
-			]
+		'path': None
 		},
 		{
 		'id': '788b7823-8a60-42a1-b1b5-2987ff145d43',
@@ -172,32 +165,21 @@ def places():
 			'lng':120.6631362
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-		'path': None,
-		'images': [
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
-			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
-			]
+		'path': None
 		},
 		{
 		'id': '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48',
-		'title': '類別二',
-		'location': '日式',
-		'icon-url': True,
-		'path': True,
-		'images': [],
-		'fields':[]
+		'title': '自訂路線一',
+		'location': None,
+		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg',
+		'path': 'path=color:0x0000ff|weight:5|24.147810,120.6631362|24.147811,120.6631363|24.147811,120.6631364|24.147814,120.663138'
 		},
 		{
 		'id': 'e310f53e-0023-4a33-8b5c-12a7e71ecb8c',
-		'title': '類別二',
-		'location': '日式',
-		'icon-url': True,
-		'path': True,
-		'images': [],
-		'fields':[]
+		'title': '自訂路線二',
+		'location': None,
+		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
+		'path': 'path=color:0x0000ff|weight:5|24.147813,120.6631362|24.147815,120.6631363|24.147815,120.6631364|24.147815,120.663138'
 		}
 	]
 	return jsonify(places)					
@@ -254,8 +236,26 @@ def place():
 		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg'];
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg';
 		return jsonify(placeLocation)
+	elif id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48':
+		placeLocation["id"] = '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48'
+		placeLocation["title"] = '自訂路線一'
+		placeLocation["images"] = [
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/3b041ad4-5f55-4768-a1e6-24546a094f25.jpg',
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',					
+			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
+		];
+		placeLocation["location"] = None
+		placeLocation["path"] = 'path=color:0x0000ff|weight:5|24.147810,120.6631362|24.147811,120.6631363|24.147811,120.6631364|24.147814,120.663138'
+		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg';
+		return jsonify(placeLocation)
 	else:	
-		return jsonify({
-			'other':'yes'
-			})
+		placeLocation["id"] = 'e310f53e-0023-4a33-8b5c-12a7e71ecb8c'
+		placeLocation["title"] = '自訂路線二'
+		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg'];
+		placeLocation["location"] = None
+		placeLocation["path"] = 'path=color:0x0000ff|weight:5|24.147813,120.6631362|24.147815,120.6631363|24.147815,120.6631364|24.147815,120.663138'
+		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg';
+		return jsonify(placeLocation)
 		
