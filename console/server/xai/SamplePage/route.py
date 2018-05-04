@@ -250,6 +250,7 @@ def place():
 		return jsonify(placeLocation)
 	elif id == '788b7823-8a60-42a1-b1b5-2987ff145d43':
 		placeLocation["id"] = '788b7823-8a60-42a1-b1b5-2987ff145d43'
+		placeLocation["title"] = '車打咖者隱'
 		return jsonify(placeLocation)
 	else:	
 		return jsonify({
