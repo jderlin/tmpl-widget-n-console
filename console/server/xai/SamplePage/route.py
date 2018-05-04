@@ -236,7 +236,7 @@ def place():
 		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg'];
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg';
 		return jsonify(placeLocation)
-	elif id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48':
+	elif id == 'bd2cdcc8-615e-44f5-8650-b8ee51258829':
 		placeLocation["id"] = 'bd2cdcc8-615e-44f5-8650-b8ee51258829'
 		placeLocation["title"] = '自訂路線一'
 		placeLocation["images"] = [
