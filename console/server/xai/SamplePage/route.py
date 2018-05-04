@@ -172,14 +172,14 @@ def places():
 		'title': '自訂路線一',
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg',
-		'path': 'path=color:0x0000ff|weight:5|24.147810,120.6631362|24.147811,120.6631363|24.147811,120.6631364|24.147814,120.663138'
+		'path': 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962'
 		},
 		{
 		'id': 'e310f53e-0023-4a33-8b5c-12a7e71ecb8c',
 		'title': '自訂路線二',
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
-		'path': 'path=color:0x0000ff|weight:5|24.147813,120.6631362|24.147815,120.6631363|24.147815,120.6631364|24.147815,120.663138'
+		'path': '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138'
 		}
 	]
 	return jsonify(places)					
@@ -247,7 +247,7 @@ def place():
 			'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg'
 		];
 		placeLocation["location"] = None
-		placeLocation["path"] = 'path=color:0x0000ff|weight:5|24.147810,120.6631362|24.147811,120.6631363|24.147811,120.6631364|24.147814,120.663138'
+		placeLocation["path"] = 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962'
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg';
 		return jsonify(placeLocation)
 	else:	
@@ -255,7 +255,7 @@ def place():
 		placeLocation["title"] = '自訂路線二'
 		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg'];
 		placeLocation["location"] = None
-		placeLocation["path"] = 'path=color:0x0000ff|weight:5|24.147813,120.6631362|24.147815,120.6631363|24.147815,120.6631364|24.147815,120.663138'
+		placeLocation["path"] = '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138'
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg';
 		return jsonify(placeLocation)
 		
