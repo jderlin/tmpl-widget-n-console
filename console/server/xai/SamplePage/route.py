@@ -144,7 +144,7 @@ def filters():
 	]
 	return jsonify(filters)	
 
-@app.route("/"+app.config['API_VERSION']+"/places", methods=['POST'])
+@app.route("/"+app.config['API_VERSION']+"/places", methods=['GET'])
 def places():
 	places = [		
 		{
