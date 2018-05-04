@@ -251,6 +251,8 @@ def place():
 	elif id == '788b7823-8a60-42a1-b1b5-2987ff145d43':
 		placeLocation["id"] = '788b7823-8a60-42a1-b1b5-2987ff145d43'
 		placeLocation["title"] = '車打咖者隱'
+		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg'];
+		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg';
 		return jsonify(placeLocation)
 	else:	
 		return jsonify({
