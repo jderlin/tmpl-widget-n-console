@@ -155,7 +155,17 @@ def places():
 			'lng':120.6631362
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
-		'path': None
+		'path': None,
+		'classes':[
+				{
+					'id':'a3079e3b-10c6-4274-a3e1-b36406bc552e',
+					'parentId':''
+				},
+				{
+					'id':'28bc0fe3-aa1c-4474-8258-6f29c430562b',
+					'parentId':None
+				}
+			]
 		},
 		{
 		'id': '788b7823-8a60-42a1-b1b5-2987ff145d43',
@@ -165,21 +175,39 @@ def places():
 			'lng':120.6631362
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
-		'path': None
+		'path': None,
+		'classes':[
+				{
+					'id':'22f443ea-1ece-469a-9633-9ed2bff3b0ff',
+					'parentId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+				}				
+			]
 		},
 		{
 		'id': 'bd2cdcc8-615e-44f5-8650-b8ee51258829',
 		'title': '自訂路線一',
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg',
-		'path': 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962'
+		'path': 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962',
+		'classes':[
+				{
+				'id':'28bc0fe3-aa1c-4474-8258-6f29c430562b',
+				'parentId':None
+				}				
+			]
 		},
 		{
 		'id': 'e310f53e-0023-4a33-8b5c-12a7e71ecb8c',
 		'title': '自訂路線二',
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
-		'path': '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138'
+		'path': '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138',
+		'classes':[
+				{
+					'id':'7d36e9ad-f2b1-475b-a4dc-f938b4c61ef6',
+					'parentId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+				}				
+			]
 		}
 	]
 	return jsonify(places)					
