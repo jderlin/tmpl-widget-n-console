@@ -286,7 +286,17 @@ def place():
 
 				'content': '240 分鐘'
 			}
-		]
+		],
+		'displayGroups':[
+				{
+					'subDisplayGroupId':'a3079e3b-10c6-4274-a3e1-b36406bc552e',
+					'displayGroupId':'9beb08c9-5069-4cfb-8ff9-ce8f5fbf4c07'
+				},
+				{
+					'subDisplayGroupId':'0ab0328e-e261-4fa0-a889-7ff2cb3b8e9b',
+					'displayGroupId':'28bc0fe3-aa1c-4474-8258-6f29c430562b'
+				}
+			]
 	}
 	if id == '21ebb1dc-bd45-42c5-bfb2-c4e6fa5f2b48':
 		return jsonify(placeLocation)
@@ -295,6 +305,12 @@ def place():
 		placeLocation["title"] = '車打咖者隱'
 		placeLocation["images"] = ['https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg'];
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg';
+		placeLocation["displayGroups"] = [
+				{
+					'subDisplayGroupId':'22f443ea-1ece-469a-9633-9ed2bff3b0ff',
+					'displayGroupId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+				}				
+			]
 		return jsonify(placeLocation)
 	elif id == 'bd2cdcc8-615e-44f5-8650-b8ee51258829':
 		placeLocation["id"] = 'bd2cdcc8-615e-44f5-8650-b8ee51258829'
@@ -309,6 +325,12 @@ def place():
 		placeLocation["location"] = None
 		placeLocation["path"] = 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962'
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg';
+		placeLocation["displayGroups"] = [
+				{
+					'subDisplayGroupId':'0ab0328e-e261-4fa0-a889-7ff2cb3b8e9b',
+					'displayGroupId':'28bc0fe3-aa1c-4474-8258-6f29c430562b'
+				}				
+			]
 		return jsonify(placeLocation)
 	else:	
 		placeLocation["id"] = 'e310f53e-0023-4a33-8b5c-12a7e71ecb8c'
@@ -317,5 +339,12 @@ def place():
 		placeLocation["location"] = None
 		placeLocation["path"] = '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138'
 		placeLocation["icon-url"] = 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg';
+		placeLocation["displayGroups"] = [
+				{
+					'subDisplayGroupId':'7d36e9ad-f2b1-475b-a4dc-f938b4c61ef6',
+					'displayGroupId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+				}				
+			]
+		
 		return jsonify(placeLocation)
 		
