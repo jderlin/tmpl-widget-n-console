@@ -36,7 +36,7 @@ def reverse_echo():
 			'message': 'The argument s is required.'
 		})
 
-@app.route("/"+app.config['API_VERSION']+"/filters", methods=['GET'])
+@app.route("/"+app.config['API_VERSION']+"/displayGroups", methods=['GET'])
 def filters():
 	filters = [
 		{
@@ -44,7 +44,7 @@ def filters():
 		'name': '餐廳',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png',
 		'defaultActivate': False,
-		'childrens':[
+		'subDisplayGroups':[
 				{
 					'id': 'a3079e3b-10c6-4274-a3e1-b36406bc552e',
 					'name': '中式',
@@ -70,7 +70,7 @@ def filters():
 		'name': '鳥類',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/battery-2.png',
 		'defaultActivate': False,
-		'childrens':[
+		'subDisplayGroups':[
 				{
 					'id': '358e74bf-a2a7-40d5-8e4b-6e8a30f1459f',
 					'name': '大型',
@@ -96,7 +96,7 @@ def filters():
 		'name': '類別一',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_notice.svg',
 		'defaultActivate': False,
-		'childrens':[
+		'subDisplayGroups':[
 				{
 					'id': 'eedb5172-2a14-48c0-983d-256422b0fe49',
 					'name': 'A式',
@@ -121,25 +121,57 @@ def filters():
 		'id': 'ccb81ab5-6f50-4d2b-ad62-e3c54018364a',
 		'name': '類別二',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_booking.svg',
-		'defaultActivate': True
+		'defaultActivate': True,
+		'subDisplayGroups':[
+				{
+					'id': 'a6ce1532-e4ce-4377-97ab-afedb1f415ee',
+					'name': '類別二',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_booking.svg',
+					'defaultActivate': True
+				}
+			]
 		},
 		{
 		'id': 'a4d5b6c8-dc45-4763-8e54-8e0519444847',
 		'name': '類別三',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/mytrip.png',
-		'defaultActivate': False
+		'defaultActivate': False,
+		'subDisplayGroups':[
+				{
+					'id': '6cec10b4-36db-43be-a759-d7ef7fe06f6d',
+					'name': '類別三',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/mytrip.png',
+					'defaultActivate': False
+				}
+			]
 		},
 		{
 		'id': '404d398f-7520-4460-be22-629c30899d1c',
 		'name': '類別四',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/car.png',
-		'defaultActivate': False
+		'defaultActivate': False,
+		'subDisplayGroups':[
+				{
+					'id': 'd2bb47fe-e013-47bc-bc15-f3c032535991',
+					'name': '類別四',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/menu/car.png',
+					'defaultActivate': False
+				}
+			]
 		},
 		{
 		'id': '28bc0fe3-aa1c-4474-8258-6f29c430562b',
 		'name': '類別五',
 		'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/arrow-down.png',
-		'defaultActivate': True
+		'defaultActivate': True,
+		'subDisplayGroups':[
+				{
+					'id': '0ab0328e-e261-4fa0-a889-7ff2cb3b8e9b',
+					'name': '類別五',
+					'icon': 'https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/arrow-down.png',
+					'defaultActivate': True
+				}
+			]
 		}
 	]
 	return jsonify(filters)	
@@ -156,14 +188,14 @@ def places():
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/995d9090-e554-4516-9409-c43d8597dfd2.png',
 		'path': None,
-		'classes':[
+		'displayGroups':[
 				{
-					'id':'a3079e3b-10c6-4274-a3e1-b36406bc552e',
-					'parentId':''
+					'subDisplayGroupId':'a3079e3b-10c6-4274-a3e1-b36406bc552e',
+					'displayGroupId':'9beb08c9-5069-4cfb-8ff9-ce8f5fbf4c07'
 				},
 				{
-					'id':'28bc0fe3-aa1c-4474-8258-6f29c430562b',
-					'parentId':None
+					'subDisplayGroupId':'0ab0328e-e261-4fa0-a889-7ff2cb3b8e9b',
+					'displayGroupId':'28bc0fe3-aa1c-4474-8258-6f29c430562b'
 				}
 			]
 		},
@@ -176,10 +208,10 @@ def places():
 		},
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/ca9f423d-9321-483e-bbd1-e7410b4f650f.jpg',
 		'path': None,
-		'classes':[
+		'displayGroups':[
 				{
-					'id':'22f443ea-1ece-469a-9633-9ed2bff3b0ff',
-					'parentId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+					'subDisplayGroupId':'22f443ea-1ece-469a-9633-9ed2bff3b0ff',
+					'displayGroupId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
 				}				
 			]
 		},
@@ -189,10 +221,10 @@ def places():
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/7a5ef23e-9863-4c69-b0f3-c77426abbc83.jpg',
 		'path': 'color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962',
-		'classes':[
+		'displayGroups':[
 				{
-				'id':'28bc0fe3-aa1c-4474-8258-6f29c430562b',
-				'parentId':None
+					'subDisplayGroupId':'0ab0328e-e261-4fa0-a889-7ff2cb3b8e9b',
+					'displayGroupId':'28bc0fe3-aa1c-4474-8258-6f29c430562b'
 				}				
 			]
 		},
@@ -202,10 +234,10 @@ def places():
 		'location': None,
 		'icon-url': 'https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/1603dc4c-f0fe-4e1d-bf69-6bdd4aa9268e.jpg',
 		'path': '0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138',
-		'classes':[
+		'displayGroups':[
 				{
-					'id':'7d36e9ad-f2b1-475b-a4dc-f938b4c61ef6',
-					'parentId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
+					'subDisplayGroupId':'7d36e9ad-f2b1-475b-a4dc-f938b4c61ef6',
+					'displayGroupId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
 				}				
 			]
 		}
