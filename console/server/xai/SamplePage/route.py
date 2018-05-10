@@ -312,7 +312,7 @@ def place():
 				}				
 			]
 		placeLocation["location"] = { 
-			'lat':24.1478020,
+			'lat':24.1479020,
 			'lng':120.6631362
 		}
 		return jsonify(placeLocation)
