@@ -311,6 +311,10 @@ def place():
 					'displayGroupId':'8c29988c-e5e3-4bb1-9f5e-b3f9b35410fd'
 				}				
 			]
+		placeLocation["location"] = { 
+			'lat':24.1478020,
+			'lng':120.6631362
+		}
 		return jsonify(placeLocation)
 	elif id == 'bd2cdcc8-615e-44f5-8650-b8ee51258829':
 		placeLocation["id"] = 'bd2cdcc8-615e-44f5-8650-b8ee51258829'
