@@ -1,0 +1,300 @@
+[
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "3",
+    "name": "景點",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "169",
+        "name": "自然景觀"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "3",
+        "name": "景點"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "167",
+        "name": "紀念碑和雕像"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "10",
+        "name": "租賃"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "279",
+        "name": "大自然和公園"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "162",
+        "name": "瞭望地點"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "223",
+        "name": "主題公園"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "165",
+        "name": "古代遺址"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "4",
+        "name": "住宿"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "163",
+        "name": "特色建築"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "164",
+        "name": "教堂和大教堂"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "178",
+        "name": "水族館"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "9",
+        "name": "藝文"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "222",
+        "name": "遊樂場"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "4",
+    "name": "住宿",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "4",
+        "name": "住宿"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "314",
+        "name": "度假村"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "172",
+        "name": "飯店"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "10",
+    "name": "租賃",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "10",
+        "name": "租賃"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "374",
+        "name": "其他交通類出租"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "308",
+        "name": "汽車出租"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "12",
+    "name": "便利設施",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "323",
+        "name": "火車站"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "325",
+        "name": "港口"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "349",
+        "name": "大學"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "348",
+        "name": "學院"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "12",
+        "name": "便利設施"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "372",
+        "name": "其他地方服務"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "2",
+    "name": "購物",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "131",
+        "name": "百貨公司"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "134",
+        "name": "購物中心"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "9",
+    "name": "藝文",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "9",
+        "name": "藝文"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "1",
+    "name": "餐飲",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "43",
+        "name": "早餐"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "1",
+        "name": "餐飲"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "51",
+        "name": "酒吧"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "3",
+        "name": "景點"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "44",
+        "name": "午餐"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "48",
+        "name": "下午茶"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "46",
+        "name": "晚餐"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "45",
+        "name": "早午餐"
+      }
+    ]
+  },
+  {
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "14",
+    "name": "辦公室和場地",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "359",
+        "name": "工作室"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "361",
+        "name": "活動場地"
+      }
+    ]
+  }
+]
