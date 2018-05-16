@@ -200,8 +200,7 @@ def filters():
 				]
 				return jsonify(filters)	'''
 @app.route("/"+app.config['API_VERSION']+"/places", methods=['POST'])
-def postPlaces():	
-	print(request.get_json()["center"])				
+def postPlaces():				
 	places = []
 	filterIds = request.get_json()["filterIds"]
 	for spot in spots:
