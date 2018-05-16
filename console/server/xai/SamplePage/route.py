@@ -213,7 +213,14 @@ def places():
 				del tmp_spot['description']
 				places.append(tmp_spot)
 				break	
-
+	
+	if len(places) == 0:
+		for spot in spots:
+			tmp_spot = copy.deepcopy(spot)
+			del tmp_spot['images']
+			del tmp_spot['fields']
+			del tmp_spot['description']
+			places.append(tmp_spot)			
 	return jsonify(places)	
 	'''places = [		
 					{
