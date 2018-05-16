@@ -206,10 +206,11 @@ def places():
 	for spot in spots:
 		for filterId in filterIds:
 			if (spot['displayGroups'][0]['displayGroupId'] == filterId) or (spot['displayGroups'][0]['subDisplayGroupId'] == filterId):
-				del spot['images']
-				del spot['fields']
-				del spot['description']
-				places.append(spot)
+				tmp_spot = spot.deepcopy()
+				del tmp_spot['images']
+				del tmp_spot['fields']
+				del tmp_spot['description']
+				places.append(tmp_spot)
 				break	
 
 	return jsonify(places)	
