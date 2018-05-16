@@ -7,6 +7,7 @@ import time
 import logging
 import pprint
 import string
+import copy
 
 import logging
 logging.basicConfig(level=logging.INFO)
@@ -206,7 +207,7 @@ def places():
 	for spot in spots:
 		for filterId in filterIds:
 			if (spot['displayGroups'][0]['displayGroupId'] == filterId) or (spot['displayGroups'][0]['subDisplayGroupId'] == filterId):
-				tmp_spot = spot.deepcopy()
+				tmp_spot = copy.deepcopy(spot)
 				del tmp_spot['images']
 				del tmp_spot['fields']
 				del tmp_spot['description']
