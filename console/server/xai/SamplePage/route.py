@@ -215,7 +215,7 @@ def places():
 				break	
 	
 	if len(places) == 0:
-		for spot in spots:
+		for spot in spots: 
 			tmp_spot = copy.deepcopy(spot)
 			del tmp_spot['images']
 			del tmp_spot['fields']
