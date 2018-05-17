@@ -4687,11 +4687,8 @@
     "images": [
       "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09b0eff2-e6b9-4a0b-8aa9-e81ee7d6711d.png"
     ],
-    "location": {
-      "lat": 49.273892,
-      "lng": -123.122747
-    },
-    "path": null,
+    "location": null,
+    "path": "color:0xff0000ff|weight:5|24.147810,120.6631362|24.148811,120.6632562|24.143811,120.6634762|24.149814,120.668962",
     "title": " DD Mau"
   },
   {
@@ -4756,11 +4753,8 @@
     "images": [
       "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/b2bdc263-7722-4fcb-9333-0953a93664d2.png"
     ],
-    "location": {
-      "lat": 49.27325620000001,
-      "lng": -123.12074130000002
-    },
-    "path": null,
+    "location": null,
+    "path": "0x5199c9ff|weight:5|24.147813,120.6631362|24.147815,120.6633363|24.149815,120.6634364|24.141815,120.669138",
     "title": "Sciué Italian Bakery Caffé"
   },
   {
@@ -4848,11 +4842,8 @@
     "images": [
       "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/2c4c2676-1df2-4968-9f72-701a3b0c93eb.png"
     ],
-    "location": {
-      "lat": 49.2750869,
-      "lng": -123.1210916
-    },
-    "path": null,
+    "location": null,
+    "path": "color:0x0000ff|weight:5|40.737102,-73.990318|40.749825,-73.987963|40.752946,-73.987384|40.755823,-73.986397",
     "title": "Zend Conscious Lounge"
   },
   {
