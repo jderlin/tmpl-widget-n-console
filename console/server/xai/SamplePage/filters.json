@@ -145,7 +145,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/4a39ffd5-235d-4cd6-bb06-1e180ce3034c.png",
     "id": "12",
     "name": "便利設施",
     "subDisplayGroups": [
@@ -223,7 +223,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/185ca078-091e-4a7b-98c5-46bf3f6db3a0.png",
     "id": "1",
     "name": "餐飲",
     "subDisplayGroups": [
@@ -247,7 +247,7 @@
       },
       {
         "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/4a39ffd5-235d-4cd6-bb06-1e180ce3034c.png",
         "id": "3",
         "name": "景點"
       },
