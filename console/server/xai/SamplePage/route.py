@@ -135,9 +135,9 @@ def search():
 def filter():
 	return jsonify(filter_data)	
 
-@app.route("/"+app.config['API_VERSION']+"/userInfo", methods=['GET'])
-def userInfo():
-	usuerInfo = {
+@app.route("/"+app.config['API_VERSION']+"/currentUserInfo", methods=['GET'])
+def currentUserInfo():
+	currentUserInfo = {
 		"registerDate":"2018/02/14",
 		"userInfo" : {
 			"account" : "test",
@@ -145,4 +145,4 @@ def userInfo():
 			"gender" : "man"
 		}
 	}
-	return jsonify(usuerInfo)
+	return jsonify(currentUserInfo)
