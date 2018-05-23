@@ -76,38 +76,9 @@ def postPlaces():
 				del tmp_spot['description']
 				places.append(tmp_spot)
 				break	
-	
-	if len(places) == 0:
-		for spot in spots: 
-			tmp_spot = copy.deepcopy(spot)
-			del tmp_spot['images']
-			del tmp_spot['fields']
-			del tmp_spot['description']
-			places.append(tmp_spot)			
+
 	return jsonify(places)
 
-@app.route("/"+app.config['API_VERSION']+"/places", methods=['GET'])
-def places():
-	places = []
-	filterIds = request.args.getlist('filterIds[]')	
-	for spot in spots:
-		for filterId in filterIds:
-			if (spot['displayGroups'][0]['displayGroupId'] == filterId) or (spot['displayGroups'][0]['subDisplayGroupId'] == filterId):
-				tmp_spot = copy.deepcopy(spot)
-				del tmp_spot['images']
-				del tmp_spot['fields']
-				del tmp_spot['description']
-				places.append(tmp_spot)
-				break	
-	
-	if len(places) == 0:
-		for spot in spots: 
-			tmp_spot = copy.deepcopy(spot)
-			del tmp_spot['images']
-			del tmp_spot['fields']
-			del tmp_spot['description']
-			places.append(tmp_spot)			
-	return jsonify(places)	
 @app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
 def place():
 	id = request.args.get('id')
