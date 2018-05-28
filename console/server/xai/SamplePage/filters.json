@@ -6,7 +6,7 @@
     "name": "景點",
     "subDisplayGroups": [
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "169",
         "name": "自然景觀"
@@ -30,7 +30,7 @@
         "name": "租賃"
       },
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "279",
         "name": "大自然和公園"
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "defaultActivate": false,
+    "defaultActivate": true,
     "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
     "id": "4",
     "name": "住宿",
