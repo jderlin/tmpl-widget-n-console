@@ -98,19 +98,19 @@
     "name": "住宿",
     "subDisplayGroups": [
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "4",
         "name": "住宿"
       },
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "314",
         "name": "度假村"
       },
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "172",
         "name": "飯店"
