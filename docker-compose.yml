@@ -1,13 +1,13 @@
 version: "3"
 
 services:
-  console_api:
+  radoi_console_api:
     build: ./console/server
     restart: always
     ports:
       - "55360:23360"
 
-  console_client:
+  radoi_console_client:
     build:
       context: ./console/client
       args:
@@ -16,7 +16,7 @@ services:
     ports:
       - "23361:5000"
 
-  widget:
+  radoi_widget:
     build: ./widget
     restart: always
     ports:
