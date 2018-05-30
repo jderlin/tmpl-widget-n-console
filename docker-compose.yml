@@ -5,7 +5,7 @@ services:
     build: ./console/server
     restart: always
     ports:
-      - "23360:23360"
+      - "54360:23360"
 
   console_client:
     build:
