@@ -2,299 +2,201 @@
   {
     "defaultActivate": false,
     "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
-    "id": "3",
-    "name": "景點",
+    "id": "1",
+    "name": "新聞",
     "subDisplayGroups": [
       {
         "defaultActivate": true,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "169",
-        "name": "自然景觀"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "3",
-        "name": "景點"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "167",
-        "name": "紀念碑和雕像"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "10",
-        "name": "租賃"
-      },
-      {
-        "defaultActivate": true,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "279",
-        "name": "大自然和公園"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "162",
-        "name": "瞭望地點"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "223",
-        "name": "主題公園"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "165",
-        "name": "古代遺址"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "4",
-        "name": "住宿"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "163",
-        "name": "特色建築"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "164",
-        "name": "教堂和大教堂"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "178",
-        "name": "水族館"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "9",
-        "name": "藝文"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "222",
-        "name": "遊樂場"
-      }
-    ]
-  },
-  {
-    "defaultActivate": true,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
-    "id": "4",
-    "name": "住宿",
-    "subDisplayGroups": [
-      {
-        "defaultActivate": true,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "4",
-        "name": "住宿"
-      },
-      {
-        "defaultActivate": true,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "314",
-        "name": "度假村"
-      },
-      {
-        "defaultActivate": true,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "172",
-        "name": "飯店"
-      }
-    ]
-  },
-  {
-    "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
-    "id": "10",
-    "name": "租賃",
-    "subDisplayGroups": [
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "10",
-        "name": "租賃"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "374",
-        "name": "其他交通類出租"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "308",
-        "name": "汽車出租"
-      }
-    ]
-  },
-  {
-    "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/4a39ffd5-235d-4cd6-bb06-1e180ce3034c.png",
-    "id": "12",
-    "name": "便利設施",
-    "subDisplayGroups": [
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "323",
-        "name": "火車站"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "325",
-        "name": "港口"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "349",
-        "name": "大學"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "348",
-        "name": "學院"
-      },
-      {
-        "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "12",
-        "name": "便利設施"
+        "name": "Chetwynd"
       },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "372",
-        "name": "其他地方服務"
+        "id": "13",
+        "name": "Dawson Creek"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "14",
+        "name": "Fort St. John"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "15",
+        "name": "Tumbler Ridge"
+      },
+      {
+        "defaultActivate": true,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "16",
+        "name": "Watson Lake"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "17",
+        "name": "Whitehorse"
       }
-    ]
-  },
-  {
+    ]  
+  },{
     "defaultActivate": false,
     "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
     "id": "2",
-    "name": "購物",
+    "name": "經典搖滾",
     "subDisplayGroups": [
       {
-        "defaultActivate": false,
+        "defaultActivate": true,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "131",
-        "name": "百貨公司"
+        "id": "21",
+        "name": "Chetwynd"
       },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "134",
-        "name": "購物中心"
-      }
-    ]
-  },
-  {
-    "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
-    "id": "9",
-    "name": "藝文",
-    "subDisplayGroups": [
+        "id": "22",
+        "name": "Tumbler Ridge"
+      },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "9",
-        "name": "藝文"
+        "id": "23",
+        "name": "Fort St. John"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "24",
+        "name": "Chetwynd"
       }
-    ]
-  },
-  {
+    ]  
+  },{
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/185ca078-091e-4a7b-98c5-46bf3f6db3a0.png",
-    "id": "1",
-    "name": "餐飲",
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "3",
+    "name": "鄉村音樂",
     "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "31",
+        "name": "Chetwynd"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "32",
+        "name": "Dawson Creek"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "33",
+        "name": "Fort Nelson"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "34",
+        "name": "Tumbler Ridge"
+      }
+    ]  
+  },{
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "4",
+    "name": "流行音樂",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "41",
+        "name": "Dawson Creek"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "42",
+        "name": "Chetwynd"
+      },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "43",
-        "name": "早餐"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "1",
-        "name": "餐飲"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "51",
-        "name": "酒吧"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/4a39ffd5-235d-4cd6-bb06-1e180ce3034c.png",
-        "id": "3",
-        "name": "景點"
+        "name": "Fort Nelson"
       },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "44",
-        "name": "午餐"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "48",
-        "name": "下午茶"
-      },
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "46",
-        "name": "晚餐"
+        "name": "Fort St. John"
       },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
         "id": "45",
-        "name": "早午餐"
-      }
-    ]
-  },
-  {
-    "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
-    "id": "14",
-    "name": "辦公室和場地",
-    "subDisplayGroups": [
-      {
-        "defaultActivate": false,
-        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "359",
-        "name": "工作室"
+        "name": "Watson Lake"
       },
       {
         "defaultActivate": false,
         "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
-        "id": "361",
-        "name": "活動場地"
+        "id": "46",
+        "name": "Whitehorse"
       }
-    ]
+    ]  
+  },{
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "5",
+    "name": "原住民電台",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "51",
+        "name": "Fort Nelson"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "52",
+        "name": "Watson Lake"
+      }
+    ]  
+  },{
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "6",
+    "name": "經典音樂",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "61",
+        "name": "Fort St. John"
+      },
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "62",
+        "name": "Whitehorse"
+      }
+    ]  
+  },{
+    "defaultActivate": false,
+    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "id": "7",
+    "name": "旅遊資訊",
+    "subDisplayGroups": [      
+      {
+        "defaultActivate": false,
+        "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Home/Images/header/header_s_funbox.svg",
+        "id": "71",
+        "name": "Whitehorse"
+      }
+    ]  
   }
 ]
