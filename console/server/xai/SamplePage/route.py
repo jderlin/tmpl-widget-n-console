@@ -102,7 +102,6 @@ def show_spots():
 def postPlaces():				
 	places = []
 	filterIds = request.get_json()["filterIds"]
-	filterIds = list(set(filterIds))
 	for spot in spots:
 		for filterId in filterIds:
 			for displayGroup in spot['displayGroups']:				
@@ -111,10 +110,19 @@ def postPlaces():
 					del tmp_spot['images']
 					del tmp_spot['fields']
 					del tmp_spot['description']
-					places.append(tmp_spot)
+					if checkRepeatPlaces(places, tmp_spot["id"])== False:
+						places.append(tmp_spot)
 					break	
 
 	return jsonify(places)
+
+def checkRepeatPlaces(places, id):
+	result = False
+	for place in places:
+		if place["id"] == id:
+			result = True
+			break
+	return result
 
 @app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
 def place():
