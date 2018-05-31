@@ -102,6 +102,7 @@ def show_spots():
 def postPlaces():				
 	places = []
 	filterIds = request.get_json()["filterIds"]
+	filterIds = list(set(filterIds))
 	for spot in spots:
 		for filterId in filterIds:
 			for displayGroup in spot['displayGroups']:				
