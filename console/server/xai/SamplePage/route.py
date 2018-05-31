@@ -241,7 +241,7 @@ def exportDisplayGroup():
 	displayGroup["subDisplayGroups"].append(subDisplayGroup)
 	displayGroups.append(displayGroup)
 
-	#group 1
+	#group 2
 	displayGroup = {
 		"defaultActivate" : True,
 		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
@@ -265,5 +265,64 @@ def exportDisplayGroup():
 		"name" : "Dawson Creek"
 	}
 	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+	displayGroups.append(displayGroup)
+
+	#group 3
+	displayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "3",
+		"name" : "電台",
+		"subDisplayGroups" : []
+	}
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "31",
+		"name" : "Chetwynd"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "32",
+		"name" : "Dawson Creek"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "33",
+		"name" : "Fort St. John"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "34",
+		"name" : "Tumbler Ridge"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "35",
+		"name" : "Whitehorse"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
+	subDisplayGroup = {
+		"defaultActivate" : True,
+		"icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+		"id": "36",
+		"name" : "Chetwynd"
+	}
+	displayGroup["subDisplayGroups"].append(subDisplayGroup)
+
 	displayGroups.append(displayGroup)
 	return displayGroups
