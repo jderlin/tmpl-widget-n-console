@@ -145,7 +145,7 @@ def fakeplaces():
 		gsheetData['title'] = value['title']
 		gsheetData['description'] = value['content']
 		gsheetData['images'] = ["https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png"]#dealMultidata(value['photos'])
-		gsheetData['icon-url'] = ["https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png"]
+		gsheetData['icon-url'] = "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png"
 		gsheetData['fields'] = []
 		#gsheetData['tags'] = dealMultidata(value['tags'])
 		gsheetData['location'] = dealLocation(value['location'])
