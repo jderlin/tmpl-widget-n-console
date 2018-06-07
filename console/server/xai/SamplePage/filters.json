@@ -1,7 +1,7 @@
 [
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if_sheep-01_2140037.png",
     "id": "3",
     "name": "景點",
     "subDisplayGroups": [
@@ -93,7 +93,7 @@
   },
   {
     "defaultActivate": true,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if__tree_1679547.png",
     "id": "4",
     "name": "住宿",
     "subDisplayGroups": [
@@ -119,7 +119,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if__mountain_snowglobe_1679563.png",
     "id": "10",
     "name": "租賃",
     "subDisplayGroups": [
@@ -145,7 +145,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/4a39ffd5-235d-4cd6-bb06-1e180ce3034c.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if__gingerbread_man_1679566.png",
     "id": "12",
     "name": "便利設施",
     "subDisplayGroups": [
@@ -189,7 +189,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if__deer_1679536.png",
     "id": "2",
     "name": "購物",
     "subDisplayGroups": [
@@ -209,7 +209,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if__city_snowglobe_1679537.png",
     "id": "9",
     "name": "藝文",
     "subDisplayGroups": [
@@ -223,7 +223,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/185ca078-091e-4a7b-98c5-46bf3f6db3a0.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if_dog-01_2140043.png",
     "id": "1",
     "name": "餐飲",
     "subDisplayGroups": [
@@ -279,7 +279,7 @@
   },
   {
     "defaultActivate": false,
-    "icon": "https://s3.ap-northeast-2.amazonaws.com/fungogowebsite/Font-Awesome-SVG-PNG-master/white/png/128/android.png",
+    "icon": "http://media.leyo-ai.xyz/icons/if_cat-01_2140040.png",
     "id": "14",
     "name": "辦公室和場地",
     "subDisplayGroups": [
