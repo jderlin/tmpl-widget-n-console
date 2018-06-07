@@ -77,6 +77,14 @@ def postPlaces():
 				places.append(tmp_spot)
 				break	
 
+	keyword = request.get_json().get('keyword', None)
+	if keyword == "iop":
+		first_spot = copy.deepcopy(spots[0])
+		del first_spot['images']
+		del first_spot['fields']
+		del first_spot['description']
+		return jsonify(first_spot)	
+		
 	return jsonify(places)
 
 @app.route("/"+app.config['API_VERSION']+"/place", methods=['GET'])
