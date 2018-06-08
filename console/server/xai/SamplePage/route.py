@@ -83,7 +83,9 @@ def postPlaces():
 		del first_spot['images']
 		del first_spot['fields']
 		del first_spot['description']
-		return jsonify(first_spot)	
+		places = []
+		places.append(first_spot)
+		return jsonify(places)	
 		
 	return jsonify(places)
 
