@@ -7,17 +7,3 @@ services:
     ports:
       - "53360:23360"
 
-  console_client:
-    build:
-      context: ./console/client
-      args:
-        REACT_APP_WEB_API_SERVER: http://localhost:23360/v1.0
-    restart: always
-    ports:
-      - "53361:5000"
-
-  widget:
-    build: ./widget
-    restart: always
-    ports:
-      - "53362:5000"
