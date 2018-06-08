@@ -335,3 +335,15 @@ def exportDisplayGroup():
 
 	displayGroups.append(displayGroup)
 	return displayGroups
+
+@app.route("/"+app.config['API_VERSION']+"/currentUserInfo", methods=['GET'])
+def currentUserInfo():
+	currentUserInfo = {
+		"registerDate":"2018/02/14",
+		"userInfo" : {
+			"account" : "test",
+			"email" : "jder@xotours-ai.xyz",
+			"gender" : "man"
+		}
+	}
+	return jsonify(currentUserInfo)
