@@ -342,7 +342,7 @@ def currentUserInfo():
 		"registerDate":"2018/02/14",
 		"userInfo" : {
 			"account" : "test",
-			"email" : "jder@xotours-ai.xyz",
+			"email" : "jder-new@xotours-ai.xyz",
 			"gender" : "man"
 		}
 	}
