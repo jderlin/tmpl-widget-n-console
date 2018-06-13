@@ -100,7 +100,7 @@ def dealLocation(val):
 
 @app.route("/"+app.config['API_VERSION']+"/displayGroups", methods=['GET'])
 def filters():	
-	return jsonify(exportDisplayGroup())	
+	return jsonify(globalFilters)	
 
 @app.route("/"+app.config['API_VERSION']+"/spots", methods=['GET'])
 def show_spots():
