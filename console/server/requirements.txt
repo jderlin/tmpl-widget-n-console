@@ -3,3 +3,5 @@ Flask==0.12
 requests==2.18.4
 oauth2client
 gspread
+beautifulsoup4
+lxml
