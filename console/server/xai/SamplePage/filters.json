@@ -1,0 +1,100 @@
+[
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-1.png",
+    "id": "6a32a0ec-8b67-4561-9393-250e1d3dfd1e",
+    "name": "體驗",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-1.png",
+        "id": "8460bcde-e75b-4169-89c8-d52364f1bc7a",
+        "name": "體驗"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-2.png",
+    "id": "b82b6abc-f5c8-4ee9-a9c3-8975fb177461",
+    "name": "時尚",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-2.png",
+        "id": "5e3dce70-9b85-47bf-abf7-01f90b14a634",
+        "name": "時尚"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-3.png",
+    "id": "a02ff2e3-da8d-4582-8be3-6877db7a33b0",
+    "name": "Hotel",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-3.png",
+        "id": "4d5a52f6-2284-4ce1-aa90-1f51919c0a08",
+        "name": "Hotel"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-4.png",
+    "id": "132d2433-bdc9-46dc-a792-f934d1f98b79",
+    "name": "美容",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-4.png",
+        "id": "1bfa9e6f-2de1-4dbe-a791-2410349ac9a4",
+        "name": "美容"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-7.png",
+    "id": "1a06606d-8cac-4d36-a83f-3bf160de7a43",
+    "name": "餐廳",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-7.png",
+        "id": "79d9c09b-8c48-49c6-9810-b0c87447aa63",
+        "name": "餐廳"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-8.png",
+    "id": "466d5207-099a-42e5-8b62-6d7c8a58a98c",
+    "name": "不動產",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-8.png",
+        "id": "56809ffb-0967-4ae5-a2d4-abe44aff147a",
+        "name": "不動產"
+      }
+    ]
+  },
+  {
+    "defaultActivate": true,
+    "icon": "http://media.leyo-ai.xyz/mij/images/icon-9.png",
+    "id": "14aea44c-49ea-43a3-8528-ab0087af38e8",
+    "name": "今日新鮮事",
+    "subDisplayGroups": [
+      {
+        "defaultActivate": true,
+        "icon": "http://media.leyo-ai.xyz/mij/images/icon-9.png",
+        "id": "96b201e8-4871-4396-930f-cfe4ae1863fc",
+        "name": "今日新鮮事"
+      }
+    ]
+  }
+]

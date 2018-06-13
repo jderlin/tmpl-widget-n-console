@@ -5,6 +5,7 @@ import requests
 import time
 import uuid
 import copy
+from bs4 import BeautifulSoup
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -13,10 +14,17 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+urlDomain = "http://media.leyo-ai.xyz/mij/"
 
 with open('xai/SamplePage/places.json', encoding="utf8") as f:
     spots = json.load(f)
     spots = spots["datas"]
+
+with open('xai/SamplePage/filters.json', encoding="utf8") as f:
+    globalFilters = json.load(f)
+
+with open("./mij.kml", encoding="utf8") as fp:
+    soup = BeautifulSoup(fp, 'xml')    
 
 # endpoints
 @app.route("/", methods=['GET'])
@@ -135,48 +143,51 @@ def place():
 
 
 @app.route("/"+app.config['API_VERSION']+"/fakeplaces", methods=['GET'])
-def fakeplaces():
-	docID = "1YKDcX-hd2iskDhvNYHDFlKQniVoQRMaKJjA8uQHc_48"
-	googleUrl = "https://spreadsheets.google.com/feeds"
+def fakeplaces():	
 	gsheetDatas = {
-		"resourceId":docID,
-		"type": "googleSheet",
+		"resourceId":"mij.kml",
+		"type": "kml",
 		"datas" : []
 	}
-	credentials = ServiceAccountCredentials.from_json_keyfile_name('credential.json', googleUrl)
-	gs = gspread.authorize(credentials)	
-	gsheet = gs.open_by_key(docID)
-	wsheet = gsheet.sheet1
-	values = wsheet.get_all_records()
-	for value in values:
-		gsheetData = {}
-		gsheetData['id'] = str(uuid.uuid4())
-		gsheetData['title'] = value['title']
-		gsheetData['description'] = value['content']
-		gsheetData['images'] = ["https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png"]#dealMultidata(value['photos'])
-		gsheetData['icon-url'] = "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png"
-		gsheetData['fields'] = []
-		#gsheetData['tags'] = dealMultidata(value['tags'])
-		gsheetData['location'] = dealLocation(value['location'])
-		gsheetData['path'] = None
 
-		gsheetData['displayGroups'] = []
-		groups = exportDisplayGroup()
-		displayGroup = {}
-		for group in groups:
-			displayGroup["displayGroupId" ] = group["id"]
+	folders = soup.find_all('Folder')	
 
-			for subgroup in group['subDisplayGroups']:
-				displayGroup['subDisplayGroupId'] = subgroup['id']
+	for folder in folders:
+		iconId = folder.find("styleUrl").string[1:]
+		iconUrl = soup.find(id= iconId+"-normal").find("href").string
+		placemarks = folder.find_all('Placemark')
+		for placemark in placemarks:
+			desc = placemark.find('description')
+			gsheetData = {}
+			gsheetData['id'] = str(uuid.uuid4())
+			gsheetData['title'] = placemark.find('name').string
+			gsheetData['description'] = BeautifulSoup(str(desc)).string
+			gsheetData['images'] = [urlDomain+iconUrl]#dealMultidata(value['photos'])
+			gsheetData['icon-url'] = urlDomain+iconUrl			
+			coordinates = placemark.find('coordinates').string.strip().split(',')			
+			gsheetData["location"] = {
+				"lat": float(coordinates[0]),
+				"lng": float(coordinates[1])
+			}
+			gsheetData['path'] = None
 
-				for tag in dealMultidata(value['tags']):
-					if tag == subgroup['name']:
-						#print(tag+"/"+subgroup['name'])
-						gsheetData['displayGroups'].append(copy.deepcopy(displayGroup))
+			gsheetData['displayGroups'] = []
+			groups = globalFilters
+			displayGroup = {}
+			print(placemark.find('name').string)
+			for group in groups:
+				displayGroup["displayGroupId" ] = group["id"]
+
+				for subgroup in group['subDisplayGroups']:
+					displayGroup['subDisplayGroupId'] = subgroup['id']
+
+					if folder.find("name").string == subgroup['name']:
+							#print(tag+"/"+subgroup['name'])
+							gsheetData['displayGroups'].append(copy.deepcopy(displayGroup))
+						
 
 
-		gsheetDatas['datas'].append(gsheetData)
-
+			gsheetDatas['datas'].append(gsheetData)		
 	
 	return jsonify(gsheetDatas)		
 
@@ -335,3 +346,62 @@ def exportDisplayGroup():
 
 	displayGroups.append(displayGroup)
 	return displayGroups
+
+@app.route("/"+app.config['API_VERSION']+"/dbmijplaces", methods=['GET'])
+def mijplaces():
+	kml = {}
+	kml["id"] = uuid.uuid1()
+	kml["resourceUrl"] = "MIJ.kml"
+	kml["resourceType"] = "kml"
+	kml["createUser"] = "jder@xotours-ai.xyz"
+	kml["createAt"] = "jder@xotours-ai.xyz"
+	kml["updateAt"] = "jder@xotours-ai.xyz"
+	kml["datas"] = []
+	folders = soup.find_all('Folder')
+	for folder in folders:
+		placemarks = folder.find_all('Placemark')
+		for placemark in placemarks:
+			desc = placemark.find('description')
+			data = {
+				"id": uuid.uuid1(),
+				"title":placemark.find('name').string,
+				"description":BeautifulSoup(str(desc)).string,#str(desc).replace('<description>','').replace('</description>',''),
+				"images":"imgUrl",		
+				"tags": [ folder.find("name").string ],		
+				"path":None
+			}
+
+			coordinates = placemark.find('coordinates').string.strip().split(',')			
+			data["location"] = {
+				"lat": float(coordinates[0]),
+				"lng": float(coordinates[1])
+			}
+
+			kml["datas"].append(data)
+
+	return jsonify(kml)	
+
+@app.route("/"+app.config['API_VERSION']+"/mijfilter", methods=['GET'])
+def mijfilter():		
+	groups = []		
+	folders = soup.find_all('Folder')
+	for folder in folders:
+		iconId = folder.find("styleUrl").string[1:]
+		iconUrl = soup.find(id= iconId+"-normal").find("href").string				
+		group = {
+			"id": uuid.uuid4(),			
+			"icon" : urlDomain+iconUrl,
+			"defaultActivate" : True,
+			"name": folder.find("name").string,
+			"subDisplayGroups" : [
+				{
+					"id": uuid.uuid4(),			
+					"icon" : urlDomain+iconUrl,
+					"defaultActivate" : True,
+					"name": folder.find("name").string
+				}				
+			]
+		}
+		groups.append(group)
+
+	return jsonify(groups)			
