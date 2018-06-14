@@ -170,7 +170,7 @@ def fakeplaces():
 				"lng": float(coordinates[1])
 			}
 			gsheetData['path'] = None
-
+			gsheetData['fields'] = []
 			gsheetData['displayGroups'] = []
 			groups = globalFilters
 			displayGroup = {}
