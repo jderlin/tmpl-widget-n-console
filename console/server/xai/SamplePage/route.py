@@ -166,8 +166,8 @@ def fakeplaces():
 			gsheetData['icon-url'] = urlDomain+iconUrl			
 			coordinates = placemark.find('coordinates').string.strip().split(',')			
 			gsheetData["location"] = {
-				"lat": float(coordinates[0]),
-				"lng": float(coordinates[1])
+				"lat": float(coordinates[1]),
+				"lng": float(coordinates[0])
 			}
 			gsheetData['path'] = None
 			gsheetData['fields'] = []
