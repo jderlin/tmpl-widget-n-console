@@ -8,7 +8,26 @@
       }
     ],
     "fields": [
-      
+      { 
+        "title":"景點地名",
+        "content": "新手書店"
+      },
+      { 
+        "title":"景點地址",
+        "content": "403台灣台中市西區向上北路129號"
+      },
+      { 
+        "title":"行前必讀、適合對象",
+        "content": "/ 付款說明 /現金"
+      },
+      { 
+        "title":"服務開始時間",
+        "content": "15:00"
+      },
+      {
+        "title":"服務時長",
+        "content": "240 分鐘"
+      }
     ],
     "icon-url": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/09cb5968-a61a-42af-9fdc-06605047a286.png",
     "id": "a350d3f4-d40c-4f69-8e13-0651486eeee0",
