@@ -1339,7 +1339,26 @@
       }
     ],
     "fields": [
-      
+      { 
+        "title":"HTML 測試",
+        "content": "<a href='#'>新手書店</a> <br/> abbab"
+      },
+      { 
+        "title":"景點地址",
+        "content": "403台灣台中市西區向上北路129號"
+      },
+      { 
+        "title":"行前必讀、適合對象",
+        "content": "/ 付款說明 /現金"
+      },
+      { 
+        "title":"服務開始時間",
+        "content": "15:00"
+      },
+      {
+        "title":"服務時長",
+        "content": "240 分鐘"
+      }
     ],
     "icon-url": "https://s3.ap-northeast-2.amazonaws.com/fungogouser/funstore/57b814d7-ee92-48f3-8451-f4e550580fee.png",
     "id": "34e4a841-43fe-4cd5-853d-7d7fb06dd53a",
